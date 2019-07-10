@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-//    "start": "ng serve", if we want to serve files with angular or with express js
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
@@ -56,3 +55,4 @@
     "tslint": "~5.9.1"
   }
 }
+
