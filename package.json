@@ -3,15 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+//    "start": "ng serve", if we want to serve files with angular or with express js
+    "start": "node server.js",
     "build": "ng build",
-    "postinstall": "ng build --aot -prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
-    "node": "11.13.0"
+    "node": "12.x",
+    "npm": "6.7.0"
   },
   "private": true,
   "dependencies": {
@@ -25,8 +27,9 @@
     "@angular/platform-browser-dynamic": "^8.0.0",
     "@angular/router": "^8.0.0",
     "bootstrap": "3.3.7",
-    "angular-cli": "7.3.8",
     "core-js": "^2.5.4",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "6.5.2",
     "rxjs-compat": "^6.1.0",
     "zone.js": "^0.9.1"
@@ -35,7 +38,7 @@
     "@angular/compiler-cli": "^8.0.0",
     "@angular-devkit/build-angular": "~0.800.1",
     "typescript": "~3.4.5",
-    "@angular/cli": "~8.0.1",
+    "@angular/cli": "~7.3.6",
     "@angular/language-service": "^8.0.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
